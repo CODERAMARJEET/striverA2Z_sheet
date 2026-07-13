@@ -1,22 +1,21 @@
 /*
-Q2:Pattern:
-*
-* *
-* * *
-* * * *
+Q5:Pattern:
 * * * * *
-* * * * * *
+* * * * 
+* * * 
+* * 
+* 
 solved by --Amarjeet Kumar
 */
 #include<iostream>
 using namespace std;
-void rightAngledTrianglePatter(int n)
+void reverseRightAngletriangle(int n)
 {
     for(int i=0;i<n;i++)
     {
-        for(int j=0;j<=i;j++)
+        for(int j=i;j<5;j++)
         {
-            cout<<"*";
+            cout<<"* ";
         }
         cout<<"\n";
     }
@@ -26,6 +25,6 @@ int main()
     int n;
     cout<<"Enter the value of N\n";
     cin>>n;
-    rightAngledTrianglePatter(n);
+    reverseRightAngletriangle(n);
     return 0;
 }
